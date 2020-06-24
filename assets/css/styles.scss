@@ -1,3 +1,45 @@
 ---
 ---
+// Bulma's initial variables
+@import "bulma/utilities/initial-variables.sass";
+@import "bulma/utilities/functions.sass";
+
+// Variables configuration
+// ...
+
+
+// Custom colors
+$accent: {{ site.data.theme.color.accent }};
+$accent-invert: findColorInvert($accent);
+$linkedin: #0077b5;
+$linkedin-invert: findColorInvert($linkedin);
+$twitter: #55acee;
+$twitter-invert: findColorInvert($twitter);
+$github: #333;
+$github-invert: findColorInvert($github);
+
+@import "bulma/utilities/derived-variables.scss";
+
+$addColors: (
+  "accent": ($accent, $accent-invert),
+  "twitter": ($twitter, $twitter-invert),
+  "linkedin": ($linkedin, $linkedin-invert),
+  "github": ($github, $github-invert)
+);
+
+$colors: map-merge($colors, $addColors);
+
+// Required Bulma's styles
+@import "bulma/utilities/mixins.sass";
+@import "bulma/utilities/controls.sass";
+@import "bulma/base/all";
+@import "bulma/helpers/color.sass";
+@import "bulma/layout/hero.sass";
+@import "bulma/components/level.sass";
+@import "bulma/elements/button.sass";
+@import "bulma/elements/container.sass";
+@import "bulma/elements/image.sass";
+@import "bulma/elements/title.sass";
+
+// Application styles
 @import "main";
