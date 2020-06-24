@@ -1,2 +1,8 @@
 // Bulma
-@import "bulma"
+@import "bulma";
+
+// Disable horizontal scroll for the entire page
+.wrapper {
+  overflow-x: hidden;
+  max-width: 100%;
+}
