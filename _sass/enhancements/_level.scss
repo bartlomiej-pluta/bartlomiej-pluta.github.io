@@ -1,0 +1,7 @@
+.level {
+  &.is-reversed {
+    @include tablet {
+      flex-direction: row-reverse;
+    }
+  }
+}

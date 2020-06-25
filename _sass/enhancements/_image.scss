@@ -1,0 +1,46 @@
+.image {
+  @each $dimension in $dimensions {
+    &.is-mobile-#{$dimension}x#{$dimension} {
+      @include mobile {
+        height: $dimension * 1px;
+        width: $dimension * 1px;
+      }
+    }
+  }
+
+  @each $dimension in $dimensions {
+    &.is-tablet-#{$dimension}x#{$dimension} {
+      @include tablet {
+        height: $dimension * 1px;
+        width: $dimension * 1px;
+      }
+    }
+  }
+
+  @each $dimension in $dimensions {
+    &.is-desktop-#{$dimension}x#{$dimension} {
+      @include desktop {
+          height: $dimension * 1px;
+          width: $dimension * 1px;      
+      }
+    }
+  }
+
+  @each $dimension in $dimensions {
+    &.is-widescreen-#{$dimension}x#{$dimension} {
+      @include widescreen {
+        height: $dimension * 1px;
+        width: $dimension * 1px;
+      }
+    }
+  }
+
+  @each $dimension in $dimensions {
+    &.is-fullhd-#{$dimension}x#{$dimension} {
+      @include fullhd {
+        height: $dimension * 1px;
+        width: $dimension * 1px;
+      }
+    }
+  }
+}
