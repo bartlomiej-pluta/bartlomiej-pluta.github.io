@@ -7,7 +7,8 @@
 // Variables configuration
 $dimensions: 16 24 32 48 64 96 128 192 256 384 512;
 $family-logo: 'Grand Hotel', serif;
-
+$family-primary: 'Lato', sans-serif;
+$family-secondary: 'Merriweather', serif;
 
 // Custom colors
 $accent: {{ site.data.theme.color.accent }};
