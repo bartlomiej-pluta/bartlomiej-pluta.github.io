@@ -1,12 +1,8 @@
 // Root styles
 html {
   scroll-behavior: smooth;
-}
-
-// Disable horizontal scroll for the entire page
-.wrapper {
   overflow-x: hidden;
-  max-width: 100%;
+  overflow-y: scroll;
 }
 
 // Enhancements
