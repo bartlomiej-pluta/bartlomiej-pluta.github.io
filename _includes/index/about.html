@@ -3,12 +3,12 @@
     <p class="section__title">About me</p>
     <div class="columns">
       <div class="column is-5">
-        <figure class="image is-4by3">
+        <figure class="image is-4by3" data-aos="flip-left">
           <img src="/assets/img/me.svg">
         </figure>
       </div>
       <div class="column">
-        <div class="content">
+        <div class="content" data-aos="fade-left">
           {% capture about %}{% include_relative /_content/about.md %}{% endcapture %}
           {{ about | markdownify }}
         </div>
