@@ -1,0 +1,11 @@
+.section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  &__title {
+    @extend .title;
+    @extend .is-size-2;
+    @extend .is-family-secondary;
+    text-align: center;        
+  }
+}

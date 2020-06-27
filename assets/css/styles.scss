@@ -68,8 +68,10 @@ $colors: map-merge($colors, $addColors);
 @import "bulma/elements/button.sass";
 @import "bulma/elements/container.sass";
 @import "bulma/elements/icon.sass";
+@import "bulma/elements/content.sass";
 @import "bulma/elements/image.sass";
 @import "bulma/elements/title.sass";
+@import "bulma/grid/columns.sass";
 
 // Application styles
 @import "main";
