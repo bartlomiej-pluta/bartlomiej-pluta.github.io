@@ -17,8 +17,8 @@
     sections
       .filter(section => section.offset <= position)
       .forEach(section => {
-        this.document.querySelector("a[data-section-id].is-active")?.classList.remove('is-active');
-        this.document.querySelector(`a[data-section-id=${section.id}]`)?.classList.add('is-active');
+        this.document.querySelector("a[data-section-id].is-active").classList.remove('is-active');
+        this.document.querySelector(`a[data-section-id=${section.id}]`).classList.add('is-active');
       })
   }
 
