@@ -1,0 +1,40 @@
+.flipable-box {  
+  @extend .flipable;
+  @extend .is-unselectable;
+
+  &.is-200x200 {
+    width: 200px;
+    height: 200px;  
+  }
+
+  &__inner {
+    @extend .flipable-inner;
+  }
+
+  &__front, &__back {    
+    @extend .box;
+    @extend .is-shadowless;   
+  }
+
+  &__front {
+    @extend .flipable-front;    
+    @extend .has-text-white;
+    @extend .is-xy-centered;    
+    font-size: 5rem;
+  }
+
+  &__back {
+    @extend .flipable-back;
+    @extend .has-background-dark;
+    @extend .has-text-white;
+    @extend .content;    
+
+    h6 {
+      @extend .has-text-white;
+    }
+
+    p {
+      font-style: italic;
+    }
+  }
+}

@@ -1,2 +1,9 @@
 sass:
   style: compressed
+
+collections:
+  hobbies:
+    order:
+      - technology.md
+      - instruments.md
+      - dance.md

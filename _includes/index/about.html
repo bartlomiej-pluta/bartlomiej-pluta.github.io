@@ -1,6 +1,6 @@
 <div class="section about" id="about" data-section-id="about">
   <div class="container">
-    <p class="section__title">About me</p>
+    <p class="section__title is-size-2">About me</p>
     <div class="columns">
       <div class="column is-5">
         <figure class="image is-4by3" data-aos="flip-left">
@@ -13,6 +13,26 @@
           {{ about | markdownify }}
         </div>
       </div>
+    </div>
+    <p class="section__subtitle is-size-4">About my interests...</p>
+    <div class="level">
+      {% for hobby in site.hobbies %}
+      <div class="level-item">
+        <div class="flipable-box is-200x200" data-aos="flip-left">
+          <div class="flipable-box__inner">
+            <div class="flipable-box__front has-background-{{ hobby.color }}">
+              <span class="icon">
+                <i class="fas {{ hobby.icon }}"></i>
+              </span>
+            </div>
+            <div class="flipable-box__back">
+              <h6>{{ hobby.title }}</h6>
+              <p>{{ hobby.content }}</p>
+            </div>
+          </div>
+        </div>
+      </div>  
+      {% endfor %}          
     </div>
   </div>
 </div>

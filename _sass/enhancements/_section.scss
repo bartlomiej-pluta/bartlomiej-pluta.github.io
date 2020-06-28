@@ -4,8 +4,13 @@
 
   &__title {
     @extend .title;
-    @extend .is-size-2;
     @extend .is-family-secondary;
-    text-align: center;        
+    text-align: center;
+  }
+
+  &__subtitle {
+    @extend .title;
+    @extend .is-family-secondary;
+    text-align: center;
   }
 }
