@@ -1,11 +1,6 @@
 .flipable-box {  
   @extend .flipable;
-  @extend .is-unselectable;
-
-  &.is-200x200 {
-    width: 200px;
-    height: 200px;  
-  }
+  @extend .is-unselectable;  
 
   &__inner {
     @extend .flipable-inner;

@@ -2,7 +2,15 @@
   background-color: $white-ter;
 }
 
-.hobby {
-  width: 200px;
-  height: 200px;  
+.hobby {  
+  height: 11rem;  
+  width: 30rem;
+  
+  @include tablet {
+    width: 15rem;
+  }
+
+  @include widescreen {
+    width: 20rem;
+  }
 }

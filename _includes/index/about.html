@@ -1,7 +1,7 @@
 <div class="section about" id="about" data-section-id="about">
   <div class="container">
     <p class="section__title is-size-2">About me</p>
-    <div class="columns is-gapless">
+    <div class="columns is-gapless mb-6">
       <div class="column is-5">
         <figure class="image is-4by3" data-aos="flip-left">
           <img src="/assets/img/me.svg">
@@ -14,11 +14,11 @@
         </div>
       </div>
     </div>
-    <p class="section__subtitle is-size-4">About my interests...</p>
+    <p class="section__subtitle is-size-4">My interests are...</p>
     <div class="level">
       {% for hobby in site.hobbies %}
       <div class="level-item">
-        <div class="flipable-box is-200x200" data-aos="flip-left">
+        <div class="flipable-box hobby" data-aos="flip-left">
           <div class="flipable-box__inner">
             <div class="flipable-box__front has-background-{{ hobby.color }}">
               <span class="icon">
