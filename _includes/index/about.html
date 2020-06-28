@@ -1,14 +1,14 @@
 <div class="section about" id="about" data-section-id="about">
   <div class="container">
     <p class="section__title is-size-2">About me</p>
-    <div class="columns">
+    <div class="columns is-gapless">
       <div class="column is-5">
         <figure class="image is-4by3" data-aos="flip-left">
           <img src="/assets/img/me.svg">
         </figure>
       </div>
       <div class="column">
-        <div class="content" data-aos="fade-left">
+        <div class="content" data-aos="fade-right">
           {% capture about %}{% include_relative /_content/about.md %}{% endcapture %}
           {{ about | markdownify }}
         </div>
@@ -31,8 +31,8 @@
             </div>
           </div>
         </div>
-      </div>  
-      {% endfor %}          
+      </div>
+      {% endfor %}
     </div>
   </div>
 </div>
