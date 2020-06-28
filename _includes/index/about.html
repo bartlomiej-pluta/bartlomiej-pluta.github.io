@@ -18,7 +18,7 @@
     <div class="level">
       {% for hobby in site.hobbies %}
       <div class="level-item">
-        <div class="flipable-box hobby" data-aos="flip-left">
+        <div class="flipable-box hobby" data-aos="flip-left" data-aos-delay="{{ forloop.index | times: 100 }}">
           <div class="flipable-box__inner">
             <div class="flipable-box__front has-background-{{ hobby.color }}">
               <span class="icon">
