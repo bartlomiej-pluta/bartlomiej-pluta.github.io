@@ -19,6 +19,22 @@ $twitter: #55acee;
 $twitter-invert: findColorInvert($twitter);
 $github: #333;
 $github-invert: findColorInvert($github);
+$orange: {{ site.data.theme.color.orange }};
+$orange-invert: findColorInvert($orange);
+$yellow: {{ site.data.theme.color.yellow }};
+$yellow-invert: findColorInvert($yellow);
+$green: {{ site.data.theme.color.green }};
+$green-invert: findColorInvert($green);
+$turquoise: {{ site.data.theme.color.turquoise }};
+$turquoise-invert: findColorInvert($turquoise);
+$cyan: {{ site.data.theme.color.cyan }};
+$cyan-invert: findColorInvert($cyan);
+$blue: {{ site.data.theme.color.blue }};
+$blue-invert: findColorInvert($blue);
+$purple: {{ site.data.theme.color.purple }};
+$purple-invert: findColorInvert($purple);
+$red: {{ site.data.theme.color.red }};
+$red-invert: findColorInvert($red);
 
 @import "bulma/utilities/derived-variables.scss";
 
@@ -26,7 +42,15 @@ $addColors: (
   "accent": ($accent, $accent-invert),
   "twitter": ($twitter, $twitter-invert),
   "linkedin": ($linkedin, $linkedin-invert),
-  "github": ($github, $github-invert)
+  "github": ($github, $github-invert),
+  "orange": ($orange, $orange-invert),
+  "yellow": ($yellow, $yellow-invert),
+  "green": ($green, $green-invert),
+  "turquoise": ($turquoise, $turquoise-invert),
+  "cyan": ($cyan, $cyan-invert),
+  "blue": ($blue, $blue-invert),
+  "purple": ($purple, $purple-invert),
+  "red": ($red, $red-invert)
 );
 
 $colors: map-merge($colors, $addColors);

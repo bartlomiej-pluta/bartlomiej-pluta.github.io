@@ -1,2 +1,10 @@
 color:
   accent: "#48c784"
+  orange: "#ff470f"
+  yellow: "#ffdd57"
+  green: "#48c784"
+  turquoise: "#00d1b2"
+  cyan: "#3298dc"
+  blue: "#3273dc"
+  purple: "#b86bff"
+  red: "#f14668"
